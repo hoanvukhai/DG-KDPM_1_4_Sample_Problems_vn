@@ -18,7 +18,12 @@ public class Mavenproject3Test {
 
     @Test
     public void testNotATriangle() {
-        assertEquals("NotATriangle", tamgiac.triangle(1, 2, 4));
+        assertEquals("NotATriangle", tamgiac.triangle(0, 2, 4));
+        assertEquals("NotATriangle", tamgiac.triangle(1, 0, 4));
+        assertEquals("NotATriangle", tamgiac.triangle(1, 2, 0));
+        assertEquals("NotATriangle", tamgiac.triangle(7, 2, 4));
+        assertEquals("NotATriangle", tamgiac.triangle(1, 7, 4));
+        assertEquals("NotATriangle", tamgiac.triangle(1, 2, 7));
     }
     
     @Test 
